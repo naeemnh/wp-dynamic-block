@@ -20,12 +20,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/**
- * Change: block-boilerplate
- */
 
 const Edit = () => {
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Block Boilerplate – hello from the editor!", "block-boilerplate"));
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Dynamic Block – hello from the editor!", "dynamic-block"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Edit);
@@ -48,11 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/**
- * Change: block-boilerplate
- */
-
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("create-block/block-boilerplate", {
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("block-template/dynamic-block", {
   edit: _edit__WEBPACK_IMPORTED_MODULE_2__["default"],
   save: _save__WEBPACK_IMPORTED_MODULE_3__["default"]
 });
@@ -75,12 +68,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-/**
- * @change Block-boilerplate
- */
 
 const save = () => {
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Block Boilerplate – hello from the saved content!", "block-boilerplate"));
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Dynamic Block – hello from the saved content!", "dynamic-block"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (save);
@@ -306,7 +296,7 @@ module.exports = window["wp"]["i18n"];
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkblock_nest"] = self["webpackChunkblock_nest"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkdynamic_block"] = self["webpackChunkdynamic_block"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	}();

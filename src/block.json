@@ -2,16 +2,17 @@
 	"change": ["name", "title", "textdomain"],
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "create-block/block-boilerplate",
+	"name": "block-template/dynamic-block",
 	"version": "0.1.0",
-	"title": "Block Boilerplate",
+	"title": "Dynamic Block",
 	"category": "widgets",
 	"icon": "smiley",
-	"description": "Example block written with ESNext standard and JSX support – build step required.",
+	"description": "Display and filter latest posts",
+	"keywords": ["posts", "latest"],
 	"supports": {
 		"html": false
 	},
-	"textdomain": "block-boilerplate",
+	"textdomain": "dynamic-block",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css"

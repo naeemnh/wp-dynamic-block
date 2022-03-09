@@ -2,8 +2,8 @@
 
 /**
  * Change:			  Plugin Name, Function Name
- * Plugin Name:       Block Boilerplate
- * Description:       Example block written with ESNext standard and JSX support – build step required.
+ * Plugin Name:       Dynamic Block
+ * Description:       Display and filter latest posts
  * Requires at least: 5.8
  * Requires PHP:      7.0
  * Version:           0.1.0
@@ -12,11 +12,11 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       block-boilerplate
  *
- * @package           create-block
+ * @package           block-template
  */
 
-function create_block_block_boilerplate_block_init()
+function block_template_dynamic_block_block_init()
 {
 	register_block_type(__DIR__ . '/build');
 }
-add_action('init', 'create_block_block_boilerplate_block_init');
+add_action('init', 'block_template_dynamic_block_block_init');
