@@ -5,7 +5,7 @@
 	"name": "block-template/dynamic-block",
 	"version": "0.1.0",
 	"title": "Dynamic Block",
-	"category": "widgets",
+	"category": "text",
 	"icon": "smiley",
 	"description": "Display and filter latest posts",
 	"keywords": ["posts", "latest"],
@@ -15,5 +15,23 @@
 	"textdomain": "dynamic-block",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
-	"style": "file:./style-index.css"
+	"style": "file:./style-index.css",
+	"attributes": {
+		"numberOfPosts": {
+			"type": "number",
+			"default": 5
+		},
+		"displayFeaturedImage": {
+			"type": "boolean",
+			"default": true
+		},
+		"order": {
+			"type": "string",
+			"default": "desc"
+		},
+		"orderBy": {
+			"type": "string",
+			"default": "date"
+		}
+	}
 }
